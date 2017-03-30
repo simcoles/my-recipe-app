@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app works!';
+  view = 'recipe';
+
+  setView(view: string) {
+    console.log(view);
+    this.view = view;
+  }
 }
